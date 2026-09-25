@@ -1,97 +1,513 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <title>Department of Computer Science</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url("campus-background.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            background-color: #12355b;
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #1b6ca8;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 15px;
+        }
+
+        nav a:hover {
+            color: #ffd166;
+        }
+
+        h2 {
+            color: #12355b;
+            text-align: center;
+            border-bottom: 2px solid #1b6ca8;
+            padding-bottom: 8px;
+        }
+
+        .welcome {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .department-image {
+            display: block;
+            width: 70%;
+            height: 280px;
+            object-fit: cover;
+            margin: auto;
+            border-radius: 12px;
+        }
+
+        .programs {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .program {
+            width: 180px;
+            padding: 20px;
+            background-color: #e8f4ff;
+            text-align: center;
+            border-radius: 10px;
+            color: #12355b;
+            font-weight: bold;
+            box-shadow: 0 3px 8px #aaa;
+        }
+
+        .faculty {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .faculty-card {
+            width: 220px;
+            background-color: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #aaa;
+        }
+
+        .faculty-card img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .faculty-card h3 {
+            color: #12355b;
+        }
+
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th, td {
+            border: 1px solid #555;
+            padding: 12px;
+        }
+
+        th {
+            background-color: #12355b;
+            color: white;
+        }
+
+        .notice {
+            width: 80%;
+            margin: auto;
+            background-color: #fff3cd;
+            padding: 20px;
+            border-left: 6px solid #f0ad4e;
+            border-radius: 8px;
+        }
+
+        .notice li {
+            margin: 10px;
+        }
+
+        .feedback {
+            width: 60%;
+            margin: auto;
+            background-color: #f2f7fb;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px #aaa;
+        }
+
+        .feedback label {
+            font-weight: bold;
+            color: #12355b;
+        }
+
+        .feedback input,
+        .feedback select,
+        .feedback textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 7px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        .feedback textarea {
+            height: 100px;
+        }
+
+        .feedback button {
+            background-color: #1b6ca8;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact {
+            text-align: center;
+            background-color: #e8f4ff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #12355b;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+    </style>
+
 </head>
 
 <body>
 
-    <center>
+<div class="container">
 
-        <h1>Department of Computer Science</h1>
+    <header>
+
+        <h1> Department of Computer Science</h1>
 
         <h3>XYZ University</h3>
 
-        <hr>
+        <p>Innovation • Technology • Knowledge • Excellence</p>
 
-        <a href="#">Home</a> |
-        <a href="#">About Department</a> |
-        <a href="#">Faculty</a> |
-        <a href="#">Courses</a> |
+    </header>
+
+
+    <nav>
+
+        <a href="#">Home</a>
+        <a href="#">About Department</a>
+        <a href="#">Faculty</a>
+        <a href="#">Courses</a>
         <a href="#">Contact</a>
 
-        <hr>
+    </nav>
 
-    </center>
 
-    <h2>Welcome to the Department</h2>
+    <section class="welcome">
 
-    <p>
-        The Department of Computer Science provides quality education
-        and develops technical and problem-solving skills among students.
-    </p>
+        <h2>Welcome to the Department</h2>
 
-    <h2>Programs Offered</h2>
+        <img src="computer-lab.jpg"
+             alt="Computer Science Department"
+             class="department-image">
 
-    <ul>
-        <li>BCA</li>
-        <li>MCA</li>
-        <li>B.Tech Computer Science</li>
-        <li>M.Tech Computer Science</li>
-    </ul>
+        <p>
+            The Department of Computer Science provides quality education
+            and develops technical and problem-solving skills among students.
+            Our department encourages innovation, research and practical learning.
+        </p>
 
-    <h2>Faculty Members</h2>
+    </section>
 
-    <table border="1">
 
-        <tr>
-            <th>Name</th>
-            <th>Designation</th>
-            <th>Specialization</th>
-        </tr>
+    <section>
 
-        <tr>
-            <td>Dr. Amit Sharma</td>
-            <td>Professor</td>
-            <td>Artificial Intelligence</td>
-        </tr>
+        <h2> Programs Offered</h2>
 
-        <tr>
-            <td>Dr. Neha Verma</td>
-            <td>Associate Professor</td>
-            <td>Data Science</td>
-        </tr>
+        <div class="programs">
 
-        <tr>
-            <td>Mr. Rahul Singh</td>
-            <td>Assistant Professor</td>
-            <td>Computer Networks</td>
-        </tr>
+            <div class="program">
+                BCA
+            </div>
 
-    </table>
+            <div class="program">
+                MCA
+            </div>
 
-    <h2>Important Notice</h2>
+            <div class="program">
+                B.Tech Computer Science
+            </div>
 
-    <ol>
-        <li>Mid-term examinations will begin from 15 September.</li>
-        <li>Students must submit their assignments before the deadline.</li>
-        <li>Registration for the seminar is now open.</li>
-    </ol>
+            <div class="program">
+                M.Tech Computer Science
+            </div>
 
-    <h2>Contact Us</h2>
+        </div>
 
-    <p>
-        Department of Computer Science<br>
-        XYZ University<br>
-        Jaipur, Rajasthan<br>
-        Email: cs@xyzuniversity.edu
-    </p>
+    </section>
 
-    <hr>
 
-    <center>
+    <section>
+
+        <h2> Our Faculty</h2>
+
+        <div class="faculty">
+
+            <div class="faculty-card">
+
+                <img src="amit-sharma.jpg"
+                     alt="Dr. Amit Sharma">
+
+                <h3>Dr. Amit Sharma</h3>
+
+                <p>Professor</p>
+
+                <p>Artificial Intelligence</p>
+
+            </div>
+
+
+            <div class="faculty-card">
+
+                <img src="neha-verma.jpg"
+                     alt="Dr. Neha Verma">
+
+                <h3>Dr. Neha Verma</h3>
+
+                <p>Associate Professor</p>
+
+                <p>Data Science</p>
+
+            </div>
+
+
+            <div class="faculty-card">
+
+                <img src="rahul-singh.jpg"
+                     alt="Mr. Rahul Singh">
+
+                <h3>Mr. Rahul Singh</h3>
+
+                <p>Assistant Professor</p>
+
+                <p>Computer Networks</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <h2>📚 Faculty Information</h2>
+
+        <table>
+
+            <tr>
+                <th>Name</th>
+                <th>Designation</th>
+                <th>Specialization</th>
+            </tr>
+
+            <tr>
+                <td>Dr. Amit Sharma</td>
+                <td>Professor</td>
+                <td>Artificial Intelligence</td>
+            </tr>
+
+            <tr>
+                <td>Dr. Neha Verma</td>
+                <td>Associate Professor</td>
+                <td>Data Science</td>
+            </tr>
+
+            <tr>
+                <td>Mr. Rahul Singh</td>
+                <td>Assistant Professor</td>
+                <td>Computer Networks</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+
+    <section>
+
+        <!-- <h2> Important Notices</h2>
+
+        <div class="notice">
+
+            <ol>
+
+                <li>
+                    Mid-term examinations will begin from 15 September.
+                </li>
+
+                <li>
+                    Students must submit their assignments before the deadline.
+                </li>
+
+                <li>
+                    Registration for the seminar is now open.
+                </li>
+
+                <li>
+                    Coding club registrations are now available.
+                </li>
+
+            </ol>
+
+        </div>
+
+    </section> -->
+
+
+    <section>
+
+        <h2>Student Feedback</h2>
+
+        <div class="feedback">
+
+            <form>
+
+                <label>Student Name:</label>
+
+                <input type="text"
+                       name="name"
+                       placeholder="Enter your name">
+
+
+                <label>Email:</label>
+
+                <input type="email"
+                       name="email"
+                       placeholder="Enter your email">
+
+
+                <label>Select Program:</label>
+
+                <select name="program">
+
+                    <option>Select Program</option>
+                    <option>BCA</option>
+                    <option>MCA</option>
+                    <option>B.Tech Computer Science</option>
+                    <option>M.Tech Computer Science</option>
+
+                </select>
+
+
+                <label>Rate Your Department:</label>
+
+                <select name="rating">
+
+                    <option>Select Rating</option>
+                    <option>Excellent</option>
+                    <option>Very Good</option>
+                    <option>Good</option>
+                    <option>Average</option>
+                    <option>Poor</option>
+
+                </select>
+
+
+                <label>Your Feedback:</label>
+
+                <textarea name="feedback"
+                          placeholder="Write your feedback here..."></textarea>
+
+
+                <div style="text-align: center;">
+
+                    <button type="submit">
+                        Submit Feedback
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <h2>📞 Contact Us</h2>
+
+        <div class="contact">
+
+            <p>
+                Department of Computer Science
+            </p>
+
+            <p>
+                XYZ University
+            </p>
+
+            <p>
+                Jaipur, Rajasthan
+            </p>
+
+            <p>
+                Email: cs@xyzuniversity.edu
+            </p>
+
+            <p>
+                Phone: 9876543210
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
         <p>© 2026 XYZ University</p>
-    </center>
+
+        <p>Department of Computer Science</p>
+
+    </footer>
+
+</div>
 
 </body>
 </html>
